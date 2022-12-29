@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="././style.css">
+<link rel="stylesheet" type="text/css" href="././mediaqueries.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
+<title>Fase 2 - Formulário</title>
+</head>
+<body>
+<header>
+<h1>
+Não encontrou o que procurava?
+</h1>
+</header>
+<main>
+<section class="form-section">
+<div class="wrapper">
+	<div class="block-calc">
+		<div class="form-logo">
+			<img src="././icone.png">
+		</div>
+	<form action="#" method="post" name="fase2-form" id="submit-form">
+	<fieldset>
+		<legend>Preencha o formulário e retornaremos o contato</legend>
+
+	<!--name-input-->
+	<label for="name">Nome</label>
+	<input type="text" id="name" required>
+	<div class="error-output" id="active-output1"></div>
+    
+    <!--personal-input-->
+    <div class="row-container">
+    <label for="email" class="email-label-row">Email</label>
+    <label for="ddd" class="ddd-label-row">DDD</label>
+    <label for="phone" class="phone-label-row">Telefone</label>
+    </div>
+
+    <div class="row-container">
+	<input type="email" id="email" required>
+	<input type="text" id="ddd" maxlength="2" required>
+	<input type="tel" id="phone" maxlength="11" required>
+    </div>
+
+    <!--mobile-personal-input-->
+    <div class="column-container">
+    <label for="mobile-email">Email</label>
+	<input type="text" id="mobile-email" required>
+	<div class="error-output" id="mobile-active-output2"></div>
+    
+    <div class="mobile-row-container">
+    <label for="ddd-column" class="mobile-ddd-label">DDD</label>
+    <label for="phone-column" class="mobile-phone-label">Telefone</label>
+    </div>
+
+    <div class="mobile-row-container">
+    <input type="text" id="ddd-column" maxlength="2" required>
+	<input type="tel" id="phone-column" maxlength="11" required>
+    </div>
+    <div class="mobile-row-container">
+    <div class="error-output" id="active-output5"></div>
+    <div class="error-output" id="active-output6"></div>
+    </div>
+ 
+    </div>
+
+    <div class="row-container">
+    <div class="error-output" id="active-output2"></div>
+    <div class="error-output" id="active-output3"></div>
+    <div class="error-output" id="active-output4"></div>
+    </div>
+
+	<label for="birth">Data de Nascimento</label>
+	<input type="text" id="birth" maxlength="10" required>
+	<div class="error-output" id="active-output7"></div>
+
+	<!--district-input-->
+	<label for="county" class="form-division">Município</label>
+	<input type="text" id="county" placeholder= "Rio de Janeiro" value="Rio de Janeiro" disabled>
+    
+    <div class="row-container2">
+    <label for="district">Bairro de interesse</label>
+    
+    <select id="district">
+	<option value="Vasco da Gama">Vasco da Gama</option>
+	<option value="Zona Portuária">Zona Portuária</option>
+	<option value="Bairro Imperial de São Cristóvão">Bairro Imperial de São Cristóvão</option>
+	<option value="Benfica">Benfica</option>
+	<option value="Caju">Caju</option>
+	<option value="Catumbi">Catumbi</option>
+	<option value="Centro">Centro</option>
+	<option value="Cidade Nova">Cidade Nova</option>
+	<option value="Estácio">Estácio</option>
+	<option value="Gamboa">Gamboa</option>
+	<option value="Lapa">Lapa</option>
+	<option value="Mangueira">Mangueira</option>
+	<option value="Paquetá">Paquetá</option>
+	<option value="Rio Comprido">Rio Comprido</option>
+	<option value="Santa Teresa">Santa Teresa</option>
+	<option value="Santo Cristo">Santo Cristo</option>
+	<option value="Saúde">Saúde</option>
+	<option value="Anil">Anil</option>
+	<option value="Barra da Tijuca">Barra da Tijuca</option>
+	<option value="Camorim">Camorim</option>
+	<option value="Cidade de Deus">Cidade de Deus</option>
+	<option value="Flamengo">Flamengo</option>
+	<option value="Gávea">Gávea</option>
+	<option value="Glória">Glória</option>
+	<option value="Humaitá">Humaitá</option>
+	<option value="Ipanema">Ipanema</option>
+	<option value="Jardim Botânico">Jardim Botânico</option>
+	<option value="Lagoa">Lagoa</option>
+	<option value="Laranjeiras">Laranjeiras</option>
+	<option value="Leblon">Leblon</option>
+	<option value="Leme">Leme</option>
+	<option value="São Conrado">São Conrado</option>
+	<option value="Urca">Urca</option>
+	<option value="Vidigal">Vidigal</option>
+	<option value="Rocinha">Rocinha</option>
+	<option value="Curicica">Curicica</option>
+	<option value="Freguesia de Jacarepaguá">Freguesia de Jacarepaguá</option>
+	<option value="Gardênia Azul">Gardênia Azul</option>
+	<option value="Grumari">Grumari</option>
+	<option value="Itanhangá">Itanhangá</option>
+	<option value="Jacarepaguá">Jacarepaguá</option>
+	<option value="Joá">Joá</option>
+	<option value="Praça Seca">Praça Seca</option>
+	<option value="Pechincha">Pechincha</option>
+	<option value="Recreio dos Bandeirantes">Recreio dos Bandeirantes</option>
+	<option value="Tanque">Tanque</option>
+	<option value="Taquara">Taquara</option>
+	<option value="Vargem Grande">Vargem Grande</option>
+	<option value="Vargem Pequena">Vargem Pequena</option>
+	<option value="Vila">Vila</option>
+
+	</select>
+
+	<label for="period" class="period-label-row">Período para Contato</label>
+    <select id="period">
+    <option value="Manhã">Manhã</option>
+    <option value="Tarde">Tarde</option>
+    <option value="Noite">Noite</option>
+    </select>
+    </div>
+	
+	<div class="authorization-container">
+	<p class="authorization-paragraph">Autoriza contato por telefone?</p>
+    <label for="authorization-yes">SIM</label>
+	<input type="radio" id="authorization-yes" name="authorization" value="SIM">
+    <input type="radio" id="authorization-not" name="authorization" value="NAO">
+    <label for="authorization-not">NÃO</label>
+    </div>
+    <div class="submit-container">
+    <button type="submit" class="submit-button">Enviar</button>
+    </div>
+	</fieldset>
+    </form>
+	</div>
+</div>
+</section>
+</main>
+<footer>
+
+</footer>
+<noscript>
+<h2 style="position: absolute; top: 0; z-index: 10">O JavaScript está desabilitado! 
+Por favor ative o JavaScript no seu navegador!</h2>
+</noscript>
+
+<script type="text/javascript" src="././validation.js"></script>
+
+
+</body>
+</html>

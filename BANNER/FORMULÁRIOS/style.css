@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body{
+	height: auto;
+	font-size: 1em;
+	font-family: Open Sans, sans-serif;
+}
+.wrapper{
+	width: 100rem;
+	max-width: 100%;
+	margin: 0 auto;
+}
+body{
+	background-color: #3399ff;
+}
+header{
+	padding: 20px;
+}
+h1{
+	text-align: center;
+	color: #ffffff;
+	font-size: 1.5em;
+	font-family: Poppins, sans-serif;
+}
+button{
+	font-family: Open Sans, sans-serif;
+	font-weight: 700;
+}
+/*form-section*/
+.form-section{
+	padding: 20px;
+}
+.block-calc{
+	display: flex;
+	flex-direction: column;
+	height: auto;
+}
+.form-logo, .submit-container{
+	background-color: #001a33;
+	border-radius: 5px;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form-logo > img{
+  width: 30px;
+  height: 30px;
+}
+fieldset{
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	margin: 20px 0;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+legend{
+	color: #ffffff;
+	padding: 20px;
+  text-align: center;
+}
+select{
+	background-color: #001a33;
+	border: unset;
+	color: #ffffff;
+}
+option{
+	padding: 0 5px;
+}
+input{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	width: 100%;
+  background-color: unset;
+  border: unset;
+  border-bottom: 1px solid white;
+  color: #ffffff;
+}
+label{
+	margin: 5px 0;
+	color: #ffffff;
+}
+.error-output{
+	color: #ff3333;
+	font-size: 0.6em;
+	font-weight: 700;
+}
+#active-output1,{
+	display: none;
+}
+.column-container{
+  display: none;
+  flex-direction: column;
+}
+.row-container, .row-container2, .mobile-row-container{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.label-row{
+	width: 50%;
+}
+.email-label-row, .phone-label-row, #email, #phone,
+#active-output2, #active-output4{
+	width: 47.5%;
+}
+#phone-column, #active-output6{
+	width: 90%;
+}
+#ddd-column, #active-output5{
+	width: 10%;
+}
+#ddd, #active-output3{
+	width: 5%;
+	text-align: center;
+}
+.phone-label-row, .ddd-label-row,.period-label-row,
+ .mobile-phone-label, #active-output6{
+	margin-left: 20px;
+}
+#phone, #ddd, #phone-column, #active-output3, 
+#active-output4, #district, #period{
+	margin-left: 20px;
+}
+.label-row{
+	margin: 0;
+}
+.form-division{
+	margin-top: 40px;
+}
+.authorization-container{
+	display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 40px 0;
+}
+#authorization-yes, #authorization-not{
+	width: 0;
+	margin: 0 10px;
+}
+.authorization-paragraph{
+	color: #ffffff;
+	padding-right: 20px;
+}
+.submit-button{
+	background-color: unset;
+	color: #3399ff;
+	border: unset;
+	width: 120px;
+	height: 30px;
+}
+.submit-button:hover{
+	cursor: pointer;
+}
+option:hover{
+	cursor: pointer;
+	background-color: #3399ff;
+}
